@@ -51,7 +51,7 @@
                 oldCountry=rows[index_Row].cells[3].innerHTML;
 
 
-                alert(oldName+oldCity+oldCountry+oldData+"Değiştirilecek");
+                alert("name="+oldName+"\n"+"city="+oldCity+"\n"+"country="+oldCountry+"\n"+"person data="+oldData+"\n"+"Değiştirilecek");
 
 
                 modal.style.display = "block";
@@ -69,6 +69,7 @@
             newcity=personCity.value;
             newcountry=personCountry.value;
             alert(newdata+deleteWhiteSpace(newname)+newcity+newcountry);
+
 
             if(newdata==""||newname==""||newcity==""||newcountry==""){
                 alert("Please fill all input boxes")
