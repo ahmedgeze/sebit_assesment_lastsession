@@ -51,7 +51,11 @@
                 oldCountry=rows[index_Row].cells[3].innerHTML;
 
 
-                alert("name="+oldName+"\n"+"city="+oldCity+"\n"+"country="+oldCountry+"\n"+"person data="+oldData+"\n"+"Değiştirilecek");
+                // alert("name="+oldName+"\n"+"city="+oldCity+"\n"+"country="+oldCountry+"\n"+"person data="+oldData+"\n"+"Değiştirilecek");
+                document.getElementById("name").value = oldName;
+                document.getElementById("person_data").value = oldData;
+                document.getElementById("city").value = oldCity;
+                document.getElementById("country").value = oldCountry;
 
 
                 modal.style.display = "block";
@@ -146,9 +150,11 @@
                 oldName=rows[index_Row].cells[1].innerHTML;
                 oldCity=rows[index_Row].cells[2].innerHTML;
                 oldCountry=rows[index_Row].cells[3].innerHTML;
+                alert("ggg "+document.getElementById("name"));
+
+                //alert(oldName+oldCity+oldCountry+oldData+" değiştirilecek");
 
 
-                alert(oldName+oldCity+oldCountry+oldData+"Değiştirilecek");
 
 
                 modal.style.display = "block";
@@ -328,9 +334,9 @@
                             oldCity=rows[index_Row].cells[2].innerHTML;
                             oldCountry=rows[index_Row].cells[3].innerHTML;
 
-
-                            alert(oldName+oldCity+oldCountry+oldData+"Değiştirilecek");
-
+                            alert(document.getElementById("name"));
+                            // alert(oldName+oldCity+oldCountry+oldData+"Değiştirilecek");
+                             document.getElementById("name").innerHTML(oldName);
 
                             modal.style.display = "block";
 

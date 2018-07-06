@@ -1,18 +1,33 @@
 
-#person_data{
-   margin: 20px;
+/*#person_data{*/
+
+    /**/
+/*}*/
+
+/*#name{*/
+    /*margin: 5px;*/
+/*}*/
+
+
+/*#city{*/
+   /*margin: 5px;*/
+/*}*/
+
+/*#country{*/
+    /*margin: 5px;*/
+/*}*/
+
+/*.p{*/
+    /*margin: 5px;*/
+
+p{
+    margin: 5px;
+    margin-left: 15px;
 }
 
-#name{
-    margin: 20px;
+button{
+    alignment: left;
+    margin-top: 10px;
+    margin-left:0%;
+    width: 80px;
 }
-
-
-#city{
-   margin: 20px;
-}
-
-#country{
-    margin: 20px;
-}
-

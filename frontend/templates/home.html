@@ -27,7 +27,7 @@
       <span class="close">&times;</span>
     </div>
     <div class="modal-body">
-              <p id="p_data">New PersonData</p>    <input type="number" id="person_data"><br>
+              <p id="p_data">New PersonData</p>    <input type="number" id="person_data"  ><br>
            <p>New Name</p>   <input type="text" id="name"><br>
             <p>New City</p>   <input type="text" id="city"><br>
             <p>New Country</p>   <input type="text" id="country"><br>
@@ -51,26 +51,68 @@
     <div class="container">
             <br/>
 
+        <div class="row">
+                <div class="col">
 
-            <label for="selectCountry">Select Country:</label>
-                  <select class="form-control col-2" id="selectCountry">
-                     <option value="" selected></option>
-                  </select>
-            <br/>
+                <label for="selectCountry">Select Country:</label>                </div>
+                <div class="col-6">
+                  <select class="form-control " id="selectCountry">
+                     <option value="" selected></option>#
+                </select>
+                </div>
+
+        </div>
+
+
+          <div class="row inputTextCityRow">
+
+
+                    <div class="col">
+                       <label for="selectCountry">SearchCity:</label>
+                    </div>
+
+                    <div class="col-6 ">
+                        <div class="ui-widget">
+                             <input id="inputCity">
+                        </div>
+                    </div>
+
+
+
+
+
+        </div>
+
+
+{#            <div class="ui-widget">#}
+{#                <label for="selectCountry">Select Country:</label>#}
+{#                <select class="form-control col-2" id="selectCountry">#}
+{#                     <option value="" selected></option>#}
+{#                  </select>#}
+{##}
+{##}
+{#            </div>#}
+
+
+
 
 {#            <label for="inputCity">Select City:</label>#}
 {#                 <input id="inputCity" type="text"/>#}
 
 
             <br/>
+{#            <div class="ui-widget">#}
+{#              <label for="inputCity">SearchCity: </label>#}
+{#              <input id="inputCity">#}
+{#            </div>#}
 
-            <div class="ui-widget">
-              <label for="inputCity">SearchCity: </label>
-              <input id="inputCity">
-            </div>
 
 
-        <table class="table" id="userDataTable">
+
+
+
+
+        <table class="table"  id="userDataTable">
   <thead>
     <tr>
         <th scope="col">PersonData</th>

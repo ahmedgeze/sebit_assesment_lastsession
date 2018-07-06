@@ -10,6 +10,8 @@
 
 {% block css %}
         <link rel="stylesheet" type="text/css" href="{% static 'frontend/css/adduser.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'frontend/css/jquery.dataTables.min.css' %}" />
+
 
 
 {% endblock %}
@@ -18,15 +20,15 @@
 {% block content %}
 
     <div class="container">
-        <h1>USER SAVE FORM</h1>
+        <h1>SAVE USER FORM</h1>
 
 
-           <p>PersonData</p>    <input type="number" id="person_data"><br>
-           <p>Name</p>   <input type="text" id="name"><br>
-            <p>City</p>   <input type="text" id="city"><br>
-            <p>Country</p>   <input type="text" id="country"><br>
+            <p>PersonData </p>   <input type="number" id="person_data"  autocomplete="off"><br>
+            <p>Name </p> <input type="text" id="name"  autocomplete="off"><br>
+            <p>City</p>   <input type="text" id="city"  autocomplete="off"><br>
+            <p>Country</p>   <input type="text" id="country"  autocomplete="off"><br>
 
-            <div class="col-sm-6" id="saveButton">
+            <div class="col-6" id="saveButton">
             <button class="btn-block btn-primary" id="saveButton">SAVE USER</button>
             </div>
 
