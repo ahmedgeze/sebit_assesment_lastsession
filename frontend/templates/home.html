@@ -1,0 +1,118 @@
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    <title>HOME PAGE</title>
+
+{% endblock %}
+
+
+{% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'frontend/css/homepage.css' %}" />
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+       <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+              <p>PersonData</p>    <input type="number" id="person_data"><br>
+           <p>Name</p>   <input type="text" id="name"><br>
+            <p>City</p>   <input type="text" id="city"><br>
+            <p>Country</p>   <input type="text" id="country"><br>
+
+
+
+
+    </div>
+    <div class="modal-footer">
+         <div class="col-sm-6" id="saveButton">
+            <button class="btn-block btn-primary " id="saveButton">SAVE USER</button>
+            </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+    <div class="container">
+            <br/>
+
+
+            <label for="selectCountry">Select Country:</label>
+                  <select class="form-control col-2" id="selectCountry">
+                     <option value="" selected></option>
+                  </select>
+            <br/>
+
+{#            <label for="inputCity">Select City:</label>#}
+{#                 <input id="inputCity" type="text"/>#}
+
+
+            <br/>
+
+            <div class="ui-widget">
+              <label for="inputCity">SearchCity: </label>
+              <input id="inputCity">
+            </div>
+
+
+        <table class="table" id="userDataTable">
+  <thead>
+    <tr>
+        <th scope="col">PersonData</th>
+        <th scope="col">Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+{#        <th scope="col"><button type="button" class="btn btn-primary">AddNewUser</button></th>#}
+    </tr>
+  </thead>
+  <tbody id="dataTableBody">
+  </tbody>
+
+
+
+
+
+
+
+    </table>
+
+
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'frontend/js/home.js' %}" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{% static 'servis/js/jquery/jquery-3.3.1.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'frontend/js/jquery.dataTables.min.js' %}" type="text/javascript"></script>
+
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>‌​
+
+
+{% endblock %}

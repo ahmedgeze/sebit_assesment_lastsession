@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    <title></title>
+
+{% endblock %}
+
+
+{% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'frontend/css/adduser.css' %}" />
+
+
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="container">
+        <h1>USER SAVE FORM</h1>
+
+
+           <p>PersonData</p>    <input type="number" id="person_data"><br>
+           <p>Name</p>   <input type="text" id="name"><br>
+            <p>City</p>   <input type="text" id="city"><br>
+            <p>Country</p>   <input type="text" id="country"><br>
+
+            <div class="col-sm-6" id="saveButton">
+            <button class="btn-block btn-primary" id="saveButton">SAVE USER</button>
+            </div>
+
+
+
+
+
+    </div>
+
+
+
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'frontend/js/addUser.js' %}" type="text/javascript"></script>
+
+
+{% endblock %}
